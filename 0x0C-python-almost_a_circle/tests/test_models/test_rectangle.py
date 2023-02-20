@@ -74,12 +74,12 @@ class TestRectangle(unittest.TestCase):
         o1 = Rectangle(3, 2)
         o2 = Rectangle(8, 7, 0, 0, 12)
         o3 = Rectangle(3, 2, 1)
-        o4 = Rectangle(3, 2, id="holberton")
+        o4 = Rectangle(3, 2, id="CircleProj")
 
         self.assertEqual(o1.__str__(), '[Rectangle] (1) 0/0 - 3/2')
         self.assertEqual(o2.__str__(), '[Rectangle] (12) 0/0 - 8/7')
         self.assertEqual(o3.__str__(), '[Rectangle] (2) 1/0 - 3/2')
-        self.assertEqual(o4.__str__(), '[Rectangle] (holberton) 0/0 - 3/2')
+        self.assertEqual(o4.__str__(), '[Rectangle] (CircleProj) 0/0 - 3/2')
 
     def test_update(self):
         """Testing update()
@@ -88,8 +88,8 @@ class TestRectangle(unittest.TestCase):
         o1 = Rectangle(3, 2)
         o2 = Rectangle(8, 7, 0, 0, 12)
         o3 = Rectangle(3, 2, 1)
-        o4 = Rectangle(3, 2, id="holberton")
-        o5 = Rectangle(3, 2, id="holberton")
+        o4 = Rectangle(3, 2, id="CircleProj")
+        o5 = Rectangle(3, 2, id="CircleProj")
 
         o1.update(5, 7)
         self.assertEqual(o1.__str__(), '[Rectangle] (5) 0/0 - 7/2')
@@ -108,7 +108,7 @@ class TestRectangle(unittest.TestCase):
         o1 = Rectangle(3, 2)
         o2 = Rectangle(8, 7, 0, 0, 12)
         o3 = Rectangle(3, 2, 1)
-        o4 = Rectangle(3, 2, id="holberton")
+        o4 = Rectangle(3, 2, id="CircleProj")
 
         d1 = {'id': 1, 'width': 3, 'height': 2, 'x': 0, 'y': 0}
         d2 = {'id': 12, 'width': 8, 'height': 7, 'x': 0, 'y': 0}
