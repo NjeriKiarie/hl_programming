@@ -9,11 +9,12 @@ class Square:
     Square class for square objects. Square square square.
     Square is one of those words that looks stranger the more you type it.
     """
+
     # Instantiation with optional size and optional position:
     def __init__(self, size=0, position=(0, 0)):
         """
-        Square init. Square. Skware
-        Now takes a position for your sqware
+        Square init. Square. Square
+        Now takes a position for your square
         """
         self.size = size
         self.position = position
@@ -26,10 +27,11 @@ class Square:
         """
         return (self.__size)
     # create the private variable
+
     @size.setter
     def size(self, value):
         """
-        Setter for setting sqwar size.
+        Setter for setting square size.
         """
         # calling the setter
         self.__check_size__(value)
