@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
         matrix (list): A list of lists of ints or floats.
         div (int/float): The divisor.
     Raises:
-        TypeError: If the matrix contains non-numbers.
+        TypeError: If the matrix contains non-number.
         TypeError: If the matrix contains rows of different sizes.
         TypeError: If div is not an int or float.
         ZeroDivisionError: If div is 0.
