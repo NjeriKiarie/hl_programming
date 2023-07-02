@@ -6,9 +6,11 @@ use the package url
 """
 
 import urllib.request
-with urllib.request.urlopen('https:alx-intranet.hbtn.io/status') as response:
-        html = response.read()
 
-print('Body response:\n\t- type: {}'.format(type(html))
-print('\t- content: {}'.format(html))
-print('\t- utf8 content: {}'.formart(html.decode('utf-8')))
+with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
+        content = response.read()
+
+print('Body response:')
+print('\t- type: {}'.format(type(content)))
+print('\t- content: {}'.format(content))
+print('\t- utf8 content: {}'.format(content.decode('utf-8')))
