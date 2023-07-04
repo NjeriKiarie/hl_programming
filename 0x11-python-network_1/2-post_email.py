@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-A script that takes ina URL and an email, sends a POST request to the passed URL with theemail as a parameter and displays the body of the response (decoded in utf-8)
+A script that takes ina URL and an email,
+sends a POST request to the passed URL
+the email as a parameter
+displays the body of the response (decoded in utf-8)
 
 the email must be sent in the email variable
 must use the packages urllib and sys

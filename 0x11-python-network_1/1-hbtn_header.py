@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-a script that takes in a url, sends a request to the url and displays the value of the x-Request-Id. Variable found in the header of the response.
+a script that takes in a url, sends a request to the url
+displays the value of the x-Request-Id.
+Variable found in the header of the response.
 
 use pacjages otherthan urllib and sys
 must use a with statement

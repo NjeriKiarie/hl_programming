@@ -8,7 +8,7 @@ use the package url
 import urllib.request
 
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
-        content = response.read()
+    content = response.read()
 
 print('Body response:')
 print('\t- type: {}'.format(type(content)))
