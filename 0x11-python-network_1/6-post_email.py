@@ -8,6 +8,6 @@ and finally displays the body of the response.
 if __name__ == '__main__':
     import requests
     from sys import argv
-    payload = {'email': argv[2])
+    payload = {'email': argv[2]}
     response = requests.post(argv[1], data=payload)
     print(response.text)
