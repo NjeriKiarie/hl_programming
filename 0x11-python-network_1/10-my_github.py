@@ -9,9 +9,11 @@ The first argument will be your username
 The second argument will be your password
 """
 
-if __name__ == '__main__':
-    import requests
-    from sys import argv
+import requests
+from sys import argv
+from requests.auth import HTTPBasicAuth
 
-    response = get('https://api.github.com/user', auth=(argv[1], argv[2]))
+if __name__ == '__main__':
+    auth = HTTPBasicAuth(sys.orgv[1], sys.argv[2])
+    response = get('https://api.github.com/user', auth=auth)
     print(response.json().get('id'))

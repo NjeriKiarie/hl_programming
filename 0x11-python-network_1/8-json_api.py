@@ -22,7 +22,7 @@ if __name__ == '__main__':
     else:
         q == ''
     response = requests.post('http://0.0.0.0:5000/search_user',
-                data={'q': q})
+                             data={'q': q})
     try:
         response_dict = response.json()
         id = response_dict.get('id')
@@ -31,6 +31,6 @@ if __name__ == '__main__':
             print('No Result')
         else:
             print('[{}] {}'.format(response_dict.get('id'),
-                    response_dict.get('name')))
+                                   response_dict.get('name')))
     except:
         print('Not a valid JSON')
